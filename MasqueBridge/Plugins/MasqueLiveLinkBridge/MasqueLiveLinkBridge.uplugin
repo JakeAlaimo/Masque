@@ -1,0 +1,36 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "MasqueLiveLinkBridge",
+	"Description": "Rebroadcasts all available LiveLink subjects through the MessageBus framework",
+	"Category": "Virtual Production",
+	"CreatedBy": "Jake Alaimo",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"SupportedPrograms": [ "LiveLinkHub" ],
+	"Plugins": [
+		{
+			"Name": "UdpMessaging",
+			"Enabled": true
+		},
+		{
+			"Name": "LiveLink",
+			"Enabled": true
+		}
+	],
+	"Modules": [
+		{
+			"Name": "MasqueLiveLinkBridge",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"ProgramAllowList": [ "LiveLinkHub" ]
+		}
+	]
+}
